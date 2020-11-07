@@ -19,7 +19,13 @@ const yelp = require('./modules/yelp.js');
 
 
 //Get the PORT Value From Env File
-const PORT = process.env.PORT;
+const PORT = process.env.PORT || 3030;
+//const GEOCODE_API_KEY = process.env.GEOCODE_API_KEY;
+const WEATHER_API_KEY = process.env.WEATHER_API_KEY;
+const TRAIL_API_KEY = process.env.TRAIL_API_KEY;
+const MOVIE_API_KEY = process.env.MOVIE_API_KEY;
+const YELP_API_KEY = process.env.YELP_API_KEY;
+const DATABASE_URL = process.env.DATABASE_URL;
 
 // Location Get Method
 // include The Path and the handelFunction which is Location
